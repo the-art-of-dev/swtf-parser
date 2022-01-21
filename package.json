@@ -1,8 +1,9 @@
 {
   "name": "swtf-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Javascript library that parses SWTF into JSON",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/types/src/index.d.ts",
   "scripts": {
     "build": "rollup -c rollup.config.js",
     "build:esm": "rollup -c rollup.config.esm.js",
@@ -10,6 +11,10 @@
     "lint": "eslint src/ test/"
   },
   "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/the-art-of-dev/swtf-parser.git"
+  },
   "author": "Vukoman Stojanovic ArtOfDev",
   "license": "MIT",
   "dependencies": {},
