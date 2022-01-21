@@ -100,7 +100,7 @@ const rawTasks = `
 - Daily tasks 😐:
     - store: [borring]
         - food [😅]
-        - coffie [✅]
+        - coffee [✅]
     - work: [borring]
         - include e2e testing mechanism [p: medium][😅]
         - improve load testing [p: high][😅]
