@@ -84,7 +84,6 @@ export function parseSwtf(raw: string): SwtfTask[] {
 
 
         if (parent) {
-            task.level = parent.level + 1;
             parent.subTasks.push(task);
             stack.push(parent);
         } else {

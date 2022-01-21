@@ -1,0 +1,110 @@
+[
+    {
+        "text": "Daily tasks 😐:",
+        "attributes": [],
+        "subTasks": [
+            {
+                "text": "store:",
+                "attributes": [
+                    {
+                        "name": null,
+                        "index": 0,
+                        "value": "borring"
+                    }
+                ],
+                "subTasks": [
+                    {
+                        "text": "food",
+                        "attributes": [
+                            {
+                                "name": null,
+                                "index": 0,
+                                "value": "😅"
+                            }
+                        ],
+                        "subTasks": [],
+                        "level": 8
+                    },
+                    {
+                        "text": "coffie",
+                        "attributes": [
+                            {
+                                "name": null,
+                                "index": 0,
+                                "value": "✅"
+                            }
+                        ],
+                        "subTasks": [],
+                        "level": 8
+                    }
+                ],
+                "level": 4
+            },
+            {
+                "text": "work:",
+                "attributes": [
+                    {
+                        "name": null,
+                        "index": 0,
+                        "value": "borring"
+                    }
+                ],
+                "subTasks": [
+                    {
+                        "text": "include e2e testing mechanism",
+                        "attributes": [
+                            {
+                                "name": "p",
+                                "index": 0,
+                                "value": "medium"
+                            },
+                            {
+                                "name": null,
+                                "index": 1,
+                                "value": "😅"
+                            }
+                        ],
+                        "subTasks": [],
+                        "level": 8
+                    },
+                    {
+                        "text": "improve load testing",
+                        "attributes": [
+                            {
+                                "name": "p",
+                                "index": 0,
+                                "value": "high"
+                            },
+                            {
+                                "name": null,
+                                "index": 1,
+                                "value": "😅"
+                            }
+                        ],
+                        "subTasks": [],
+                        "level": 8
+                    }
+                ],
+                "level": 4
+            },
+            {
+                "text": "write today's tasks in SWTF",
+                "attributes": [
+                    {
+                        "name": null,
+                        "index": 0,
+                        "value": "cool"
+                    },
+                    {
+                        "name": null,
+                        "index": 1,
+                        "value": "✅"
+                    }
+                ],
+                "subTasks": [],
+                "level": 4
+            }
+        ],
+        "level": 0
+    }
+]
