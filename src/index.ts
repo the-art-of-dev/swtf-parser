@@ -68,7 +68,7 @@ export function parseTask(rawTask: string): SwtfTask {
     return task;
 }
 
-export function parseSwf(raw: string): SwtfTask[] {
+export function parseSwtf(raw: string): SwtfTask[] {
     const tasks: SwtfTask[] = [];
     const stack: SwtfTask[] = [];
 

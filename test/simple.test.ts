@@ -1,13 +1,13 @@
-import { parseSwf, SwtfTask } from '../src/index';
+import { parseSwtf, SwtfTask } from '../src/index';
 
 describe('Simple tests', () => {
     it('Fake task', () => {
-        expect(parseSwf('My first task written in one line of SWTF\n'))
+        expect(parseSwtf('My first task written in one line of SWTF\n'))
             .toStrictEqual<SwtfTask[]>([]);
     });
 
     it('Task without attributes', () => {
-        expect(parseSwf('- Define format that can be so simple and used acrossed devices\n'))
+        expect(parseSwtf('- Define format that can be so simple and used acrossed devices\n'))
             .toStrictEqual<SwtfTask[]>([
                 {
                     text: 'Define format that can be so simple and used acrossed devices',
@@ -19,7 +19,7 @@ describe('Simple tests', () => {
     });
 
     it('Task with wrong attributes', () => {
-        expect(parseSwf('- My first task written in one line of SWTF[this are][not attributes]\n'))
+        expect(parseSwtf('- My first task written in one line of SWTF[this are][not attributes]\n'))
             .toStrictEqual<SwtfTask[]>([
                 {
                     text: 'My first task written in one line of SWTF[this are][not attributes]',
@@ -31,7 +31,7 @@ describe('Simple tests', () => {
     });
 
     it('Task with attributes', () => {
-        expect(parseSwf('- My first task written in one line of SWTF [this are][not attributes]\n'))
+        expect(parseSwtf('- My first task written in one line of SWTF [this are][not attributes]\n'))
             .toStrictEqual<SwtfTask[]>([
                 {
                     text: 'My first task written in one line of SWTF',
