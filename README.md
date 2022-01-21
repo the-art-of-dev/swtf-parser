@@ -7,6 +7,7 @@
 
 *Javascript library that parses SWTF into JSON*
 
+> ⚠️ This project is created to meet the needs of our development team. Our main focus currently won't be on maintainig this project.
 
 ## Installation
 
