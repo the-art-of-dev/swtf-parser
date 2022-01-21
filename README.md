@@ -9,6 +9,15 @@
 
 > ⚠️ This project is created to meet the needs of our development team. Our main focus currently won't be on maintainig this project.
 
+## Content
+- [SWTF Parser](#swtf-parser)
+  - [Content](#content)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Simple tasks](#simple-tasks)
+    - [Tasks with attributes](#tasks-with-attributes)
+    - [Simple task list](#simple-task-list)
+
 ## Installation
 
 Install `swtf-parser` via npm:
@@ -19,7 +28,9 @@ npm i swtf-parser
 
 ## Usage
 
-Here's simple example:
+### Simple tasks
+
+Here's an simple example:
 
 ```js
 const { parseSwtf } = require('swtf-parser');
@@ -42,7 +53,9 @@ This code should output:
 ]
 ```
 
-Here's example of task with attributes:
+### Tasks with attributes
+
+Here's an example of task with attributes:
 
 ```js
 const { parseSwtf } = require('swtf-parser');
@@ -75,3 +88,28 @@ This code should output:
     }
 ]
 ```
+
+### Simple task list
+
+An example of task list:
+
+```js
+const { parseSwtf } = require('swtf-parser');
+
+const rawTasks = `
+- Daily tasks 😐:
+    - store: [borring]
+        - food [😅]
+        - coffie [✅]
+    - work: [borring]
+        - include e2e testing mechanism [p: medium][😅]
+        - improve load testing [p: high][😅]
+    - write today's tasks in SWTF [cool][✅]
+`;
+
+const tasks = parseSwtf(rawTasks);
+
+console.log(JSON.stringify(tasks, null, 4));
+```
+
+This code should have same output as [simple-task-list.json](./json-examples/simple-task-list.json)
