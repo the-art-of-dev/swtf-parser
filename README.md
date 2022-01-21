@@ -10,6 +10,32 @@
 ## Installation
 
 Install `swtf-parser` via npm:
+
 ```
 npm i swtf-parser
+```
+
+## Usage
+
+Here's simple example:
+
+```js
+const { parseSwtf } = require('swtf-parser');
+
+const tasks = parseSwtf('- Define format that can be so simple and used acrossed devices\n');
+
+console.log(JSON.stringify(tasks, null, 4));
+```
+
+This code should output:
+
+```json
+[
+    {
+        "text": "Define format that can be so simple and used acrossed devices",
+        "attributes": [],
+        "subTasks": [],
+        "level": 0
+    }
+]
 ```
