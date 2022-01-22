@@ -5,8 +5,16 @@ export default [
     {
         input: 'src/index.ts',
         output: {
-            dir: 'dist',
+            file: 'dist/bundle.esm.js',
             format: 'esm'
+        },
+        plugins: [typescript(), babel({ babelHelpers: 'bundled' })]
+    }, {
+        input: 'src/index.ts',
+        output: {
+            file: 'dist/bundle.js',
+            format: 'iife',
+            name: 'swtfParser'
         },
         plugins: [typescript(), babel({ babelHelpers: 'bundled' })]
     }
