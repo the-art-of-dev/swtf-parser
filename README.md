@@ -26,6 +26,16 @@ Install `swtf-parser` via npm:
 npm i swtf-parser
 ```
 
+Using CDN:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/swtf-parser@latest/dist/bundle.js"></script>
+```
+or
+```html
+<script src="https://unpkg.com/swtf-parser@1.0.6/dist/bundle.js"></script>
+```
+
 ## Usage
 
 ### Simple tasks
