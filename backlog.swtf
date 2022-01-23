@@ -1,0 +1,3 @@
+- Add rollup-plugin-terser to minify bunlde [high][ready]
+- Add test results output [low][ready]
+- Add automated builds [high][ready]
